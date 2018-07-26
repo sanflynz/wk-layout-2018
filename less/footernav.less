@@ -1,0 +1,154 @@
+footer{
+
+	@media (min-width: @grid-float-breakpoint) {
+		font-size: smaller;
+	}
+	
+}
+
+footer .container, footer .container-fluid, footer .col-xs-12 {
+
+	padding: 0px;
+
+	@media (min-width: @grid-float-breakpoint) {
+		padding: 0px 5px;
+	}
+
+}
+
+/*footer .brand-bar{
+
+	@media (min-width: @grid-float-breakpoint) {
+		height: 80px;
+		background-color: #ee3134; 
+		color: #fff;
+		border-bottom: 3px solid #d41114;
+		padding: 10px;
+	}
+	
+}*/
+footer .content{
+	background-color: #f3f3f3;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+
+	@media (min-width: @grid-float-breakpoint) {
+		padding: 20px 0px 0px 0px;
+	}
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+footer li {
+  padding: 5px 0px 5px 0px;
+
+  &:first-child{
+    padding-top: 10px;
+  }
+}
+
+footer a{
+  color: @navbar-default-link-color;
+  text-decoration: none;
+  
+  &:hover,
+  &:active {
+     color: @navbar-default-link-color;
+    text-decoration: none;
+    border-bottom: 2px solid @thermo-red;
+  }
+
+  &[target="_blank"]:after {
+  	font-family: 'Glyphicons Halflings';
+  	font-size: 10px;
+	content: " \e164";
+  }
+  
+}
+
+/*footer a[target="_blank"]:after {
+  	font-family: 'Glyphicons Halflings';
+  	font-size: 10px;
+	content: " \e164";
+}*/
+
+.footer-legal-list > li{
+	
+
+	@media (min-width: @grid-float-breakpoint) {
+		display: inline-block;
+		font-size: 13px;
+		padding: 0px 10px 0px 0px;
+		margin-right: 10px;
+		border-right: 1px solid #d8d8d8;
+		&:first-child{
+    		padding-top: 0px;
+	  	}
+	  	&:last-child{
+	  		border-right: none;
+	  	}
+	}
+
+	
+}
+
+
+
+footer .base{
+	
+	padding: 5px;
+
+	@media (min-width: @grid-float-breakpoint) {
+		padding: 20px 0px;
+	}
+}
+
+
+.footer-group {
+	border-bottom: 1px solid #d8d8d8;
+	padding: 10px 20px;
+
+	/*&:last-of-type{
+		border: none;
+	}*/
+
+	@media (min-width: @grid-float-breakpoint) {
+		border: none;
+		padding: 10px 2px;
+	}
+}
+
+.footer-header{
+	font-weight: bold;
+
+
+	.footer-icon {
+		position: absolute;
+	    right: 20px;
+	    top: 15px;
+	    display: inherit;
+
+	    @media (min-width: @grid-float-breakpoint) {
+			display: none;
+		}
+
+    
+	}
+}
+
+.footer-list {
+	
+	display: none;
+
+	@media (min-width: @grid-float-breakpoint) {
+    	display: block;
+  	}
+
+  	> li {
+  		margin-left: 20px;
+  	}
+}
+

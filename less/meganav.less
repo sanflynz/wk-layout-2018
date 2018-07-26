@@ -1,0 +1,59 @@
+.megamenu .nav,
+.megamenu .collapse,
+.megamenu .dropup,
+.megamenu .dropdown {
+  position: static;
+}
+.megamenu .container {
+  position: relative;
+}
+.megamenu .dropdown-menu {
+  left: auto;
+}
+.megamenu .megamenu-content {
+  padding: 15px;
+  font-size: 13px;
+}
+.megamenu .megamenu-content h3{
+  margin-top: 0;
+  color: #428bca;
+  font-size: 18px;
+  background-color: red;
+}
+
+.megamenu .megamenu-content ul{
+  list-style-type: none;
+  padding: 0px;
+}
+
+.megamenu .megamenu-content li{
+  padding: 5px 0px;
+
+  &:first-child{
+    padding-top: 10px;
+  }
+}
+
+.megamenu .megamenu-content a{
+  color: @navbar-default-link-color;
+  text-decoration: none;
+  
+  &:hover,
+  &:active {
+     color: @navbar-default-link-color;
+    text-decoration: none;
+    border-bottom: 2px solid @thermo-red;
+  }
+  
+}
+
+.megamenu .megamenu-content a[target="_blank"]:after {
+  font-family: 'Glyphicons Halflings';
+  font-size: 10px;
+    content: " \e164";
+}
+
+.megamenu .dropdown.megamenu-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}

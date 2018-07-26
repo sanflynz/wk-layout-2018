@@ -1,0 +1,61 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+	/*min-height: 2000px;
+    padding-top: 70px; */
+	padding-top: 45px;
+
+}
+	
+
+
+
+.dropdown-menu > li > a {
+	border-bottom: 2px solid white;
+	
+}
+.dropdown-menu > li > a[target="_blank"]:after {
+	font-family: 'Glyphicons Halflings';
+	font-size: 10px;
+    content: " \e164";
+	
+}
+.dropdown-menu > li > a > span:hover {
+	border-bottom: 2px solid #ee3134; 
+	
+}
+
+.navbar-static-top{
+	border-bottom: 1px solid #ccc;
+}
+
+.navbar-fixed-top{
+	border: 0px;
+}
+
+.navbar-fixed-top.scrolled{
+	border-bottom: 1px solid #ccc;
+}
+
+
+
+.dropdown-register:link, .dropdown-register:active, .dropdown-register:visited {
+	background-color: #ee3134;
+	color: #fff;
+}
+.dropdown-register:hover {
+	background-color: #d62c2e;
+	color: #fff;
+}
+
+.glyphicon-large {
+	font-size: 26px;
+	min-height: 60px;
+    line-height: 60px;
+}
+
+.mobile-nav {
+	display: inline-block;
+}
