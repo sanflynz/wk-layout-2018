@@ -15,12 +15,12 @@ $(document).ready(function(){
    });
 
   $(".megamenu-content").hover(function(){
-    var parent = $(this).closest("li.dropdown");
-    parent.addClass("active");
+    var parent = $(this).closest("li.dropdown").children("a").addClass("active");
+    
   },
   function(){
-    var parent = $(this).closest("li.dropdown");
-    parent.removeClass("active");
+    var parent = $(this).closest("li.dropdown").children("a").removeClass("active");
+    
   });
 
   $(".promo-card").hover(function(){
